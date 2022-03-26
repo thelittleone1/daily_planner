@@ -18,7 +18,7 @@ let dataEntry = $(".col-10 border");
 function timeColorDisplay() {
   // Gather all the elements that contain data-hour attribute
   let timeValues = ($("data-hour"));
-  //console.log(timeValues);
+  console.log(timeValues);
 
   if (timeValues < currentDay) {
     time.addClass("past");
