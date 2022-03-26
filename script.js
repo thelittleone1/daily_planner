@@ -1,14 +1,14 @@
 // Function that displays current time to top of page
 function displayTime() {
-   $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
-   for(let box in dataValues){
-    timeColorDisplay(dataValues[box])
-  }
+  $("#currentDay").text(moment().format("MMMM Do YYYY, h:mm:ss a"));
+  for(let box in dataValues){
+   timeColorDisplay(dataValues[box])
+ }
 }
-setInterval(displayTime, 3000);
+setInterval(displayTime, 1000);
 
 // Display Current Time on the Page
-var currentDay = moment().format("MMMM Do YYYY, h:mm:ss a");
+var currentDay = moment();
 console.log(currentDay);
 
 // Grabbing the input values from User
@@ -51,15 +51,6 @@ console.log(storedData);
 
 // The save button save the contents of the page
 $("saveButton").on("click", saveData);
-timeColorDisplay();
 
-//function timeColorDisplay() {
-  // var hourTime = parseInt.attr("id");
-    //if (hourTime < currentTime) {
-      //  hourTime.addClass("past");
-    //} else if ( hourTime > currentTime) {
-      //  hourTime.addClass("future");
-    //} else {
-      // hourTime.addClass("present");
-    //}        
-//}
+
+
